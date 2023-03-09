@@ -1,0 +1,28 @@
+<div class="row">
+    <table class="table table-borderd table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Emaile</th>
+                    <th>balance(₹)</th>
+                    <th>contact</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr *ngFor="let c of customers">
+                <td>{{c.id}}</td>
+                <td>{{c.cUserName}}</td>
+                <td>{{c.emailId}}</td>
+                <td>{{c.balance}} ₹</td>
+                <td>{{c.contact}}</td>
+                <td>
+                    &nbsp;
+                    <button style="color: red;" class="btn btn-dangrer" (click)="delete(c.id)">delete</button>
+                    &nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

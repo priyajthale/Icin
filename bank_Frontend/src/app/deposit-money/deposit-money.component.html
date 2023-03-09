@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-6 offset-3">
+        <h2 class="text-primary">Deposit money</h2>
+        <form [formGroup]="registerationForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label>amount:</label>
+                <input type="number">
+                <br>
+                <button>submit</button>
+            </div>
+        </form>
+    </div>
+</div>

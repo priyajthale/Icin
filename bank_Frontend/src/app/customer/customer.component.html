@@ -1,0 +1,27 @@
+<script>
+    function clickAlert(){
+        alert("your check book reqest has been aproved")
+    }
+</script>
+<div class="container" style=" margin-left: 25%; margin-top: 5%;">
+
+    <button style="margin-left: 5%; font-size: 0.75rem; margin-top: 2%;" routerLink="/details" [routerLinkActiveOptions]="{exact:true}" 
+    routerLinkActive="active"  class="btn btn-primary">viwe profile</button>
+    
+    <button style="margin-left: 5%; font-size: 0.75rem; margin-top: 2%;" routerLink="/deposit-money" [routerLinkActiveOptions]="{exact:true}" 
+    routerLinkActive="active"  class="btn btn-primary">deposit money</button>
+
+    <button style="margin-left: 30%; font-size: 0.75rem; margin-top: 2%;" (click)="logout()" class="btn btn-primary">Log Out</button>
+    <br>
+
+    <button style="margin-left: 5%; font-size: 0.75rem; margin-top: 2%;" routerLink="/withdraw-money" [routerLinkActiveOptions]="{exact:true}" 
+    routerLinkActive="active"  class="btn btn-primary">withdraw money</button>
+
+    <button style="margin-left: 5%; font-size: 0.75rem; margin-top: 2%;" routerLink="/transfer-money" [routerLinkActiveOptions]="{exact:true}" 
+    routerLinkActive="active"  class="btn btn-primary">transfer money</button>
+
+    
+    <button style="margin-left: 5%; font-size: 0.75rem; margin-top: 2%;" class="btn btn-primary" onclick="clickAlert()" value="click-2-Alert">check book</button>
+    
+    
+    </div>

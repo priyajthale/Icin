@@ -1,0 +1,26 @@
+<div class="row">
+    <h3>Registration form</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div>
+            <label>User name</label>
+            <input type="text" name="name" placeholder="Name" [(ngModel)]="cust.cUserName" >
+        </div>
+        <div>
+            <label>password</label>
+            <input type="text" name="password" placeholder="Password" [(ngModel)]="cust.cPassword" >
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="text" name="emailId" placeholder="Email" [(ngModel)]="cust.emailId" >
+        </div>
+        <div>
+            <label>Balance</label>
+            <input type="number" name="balance" placeholder="balance" [(ngModel)]="cust.balance" >
+        </div>
+        <div>
+            <label>Contact</label>
+            <input type="number" name="contact" placeholder="Contact" [(ngModel)]="cust.contact" >
+        </div>
+        <button class="btn btn-primary">Register</button>
+    </form>
+</div>
